@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-headline: 'Plus Jakarta Sans', var(--font-sans);
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --obsidian-base: #0D0E11;
+    --surface: #121316;
+    --surface-raised: #121316;
+    --surface-container: #1f1f23;
+    --surface-container-high: #292a2d;
+    --surface-container-highest: #343538;
+    --surface-container-lowest: #0d0e11;
+    --border-hairline: #27272A;
+    --border-light: #E2E8F0;
+    --text-alabaster: #F8F9FA;
+    --text-muted: #94A3B8;
+    --on-surface-variant: #d3c4b3;
+    --primary: #f2be71;
+    --primary-container: #d4a359;
+    --kelvin-amber: #E5B86E;
+  }
+
+  body {
+    background-color: var(--surface);
+    color: #e3e2e6;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
+}
+
+/* Minimalist Architectural Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0E11;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38393c;
+}
+
+/* Subtle Architectural Surfaces from Stitch Design System */
+.surface-card {
+  background: #121316;
+  border: 1px solid #27272A;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.surface-card:hover {
+  border-color: #f2be71;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7), 0 0 24px -5px rgba(242, 190, 113, 0.08);
+}
+
+.surface-raised {
+  background: #121316;
+  border: 1px solid #27272A;
+}
+
+.surface-container-high {
+  background: #292a2d;
+}
+
+/* Atmospheric Ambient Blooms from Stitch Design */
+.ambient-glow-amber {
+  background: radial-gradient(circle at 50% 50%, rgba(242, 190, 113, 0.12) 0%, rgba(13, 14, 17, 0) 70%);
+}
+
+.architectural-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, .no-print, button, .admin-sidebar {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+}

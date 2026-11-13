@@ -1,0 +1,27 @@
+# Build and dependency artifacts
+node_modules/
+dist/
+build/
+
+# .NET artifacts
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE and Editor
+.vs/
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Temporary & Log files
+*.log
+*.tmp
+stitch_designs/

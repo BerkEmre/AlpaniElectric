@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luminaires &amp; Optical Systems Matrix | ALPANI INSTRUMENTS</title>
+<!-- Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@300;400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#442b00",
+            "border-light": "#E2E8F0",
+            "surface-tint": "#f2be71",
+            "on-secondary-fixed": "#0b1c30",
+            "on-surface": "#e3e2e6",
+            "surface-container-lowest": "#0d0e11",
+            "surface-container-highest": "#343538",
+            "secondary-container": "#3a4a5f",
+            "on-surface-variant": "#d3c4b3",
+            "on-error": "#690005",
+            "inverse-on-surface": "#303034",
+            "surface-container-low": "#1b1b1f",
+            "on-background": "#e3e2e6",
+            "primary": "#f2be71",
+            "primary-fixed": "#ffddb1",
+            "on-secondary-container": "#a9bad3",
+            "on-tertiary": "#432c00",
+            "inverse-primary": "#7e5713",
+            "secondary": "#b7c8e1",
+            "on-secondary-fixed-variant": "#38485d",
+            "tertiary-container": "#d0a55d",
+            "surface-raised": "#121316",
+            "inverse-surface": "#e3e2e6",
+            "on-tertiary-container": "#573b00",
+            "tertiary": "#eec075",
+            "outline": "#9c8f7f",
+            "surface-dim": "#121316",
+            "secondary-fixed": "#d3e4fe",
+            "surface-container": "#1f1f23",
+            "error": "#ffb4ab",
+            "on-primary-fixed": "#291800",
+            "secondary-fixed-dim": "#b7c8e1",
+            "text-muted": "#94A3B8",
+            "kelvin-amber": "#E5B86E",
+            "text-alabaster": "#F8F9FA",
+            "on-primary-container": "#583a00",
+            "outline-variant": "#4f4538",
+            "obsidian-base": "#0D0E11",
+            "surface": "#121316",
+            "background": "#121316",
+            "on-tertiary-fixed-variant": "#5f4100",
+            "on-tertiary-fixed": "#281900",
+            "primary-container": "#d4a359",
+            "primary-fixed-dim": "#f2be71",
+            "on-secondary": "#213145",
+            "error-container": "#93000a",
+            "tertiary-fixed-dim": "#edbf75",
+            "border-hairline": "#27272A",
+            "on-primary-fixed-variant": "#614000",
+            "surface-variant": "#343538",
+            "surface-bright": "#38393c",
+            "surface-container-high": "#292a2d",
+            "on-error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdeac"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xl": "3rem",
+            "gutter-desktop": "2.5rem",
+            "margin": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin-desktop": "4rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-mono-lg": ["JetBrains Mono", "monospace"],
+            "headline-xl-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "label-mono-sm": ["JetBrains Mono", "monospace"]
+          },
+          "fontSize": {
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "label-mono-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-mono-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0D0E11;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #27272A;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #D4A359;
+    }
+    .fixture-glow {
+      box-shadow: 0 0 35px -8px rgba(212, 163, 89, 0.16);
+    }
+  </style>
+</head>
+<body class="bg-obsidian-base text-on-surface antialiased font-body-md text-body-md selection:bg-primary-container selection:text-obsidian-base min-h-screen flex flex-col">
+<!-- ==================== SHARED COMPONENT: TopNavBar ==================== -->
+<header class="bg-obsidian-base/90 dark:bg-obsidian-base/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-border-hairline flat no shadows transition-colors duration-150 ease-out">
+<div class="flex justify-between items-center w-full px-6 lg:px-16 h-16">
+<!-- Brand & Left Search -->
+<div class="flex items-center gap-8">
+<a class="font-headline-sm text-headline-sm tracking-wider uppercase text-text-alabaster dark:text-text-alabaster font-medium flex items-center gap-3" href="javascript:void(0)">
+<span class="w-2.5 h-2.5 bg-primary inline-block"></span>
+          ALPANI INSTRUMENTS
+        </a>
+<!-- Search Bar Input on Left -->
+<div class="hidden xl:flex items-center relative w-72">
+<span class="material-symbols-outlined absolute left-3 text-text-muted pointer-events-none">search</span>
+<input class="w-full bg-surface-raised border border-border-hairline pl-9 pr-3 py-1.5 text-text-alabaster placeholder:text-text-muted font-label-mono-sm text-label-mono-sm rounded-none focus:outline-none focus:border-primary transition-colors" placeholder="Filter by SKU, Lumens, or Optics..." type="text"/>
+<span class="absolute right-2 px-1 py-0.5 border border-border-hairline font-label-mono-sm text-[9px] text-text-muted">⌘K</span>
+</div>
+</div>
+<!-- Navigation Links (Context: Luminaires is Active) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary border-b border-primary dark:border-primary pb-1 font-body-md text-body-md" href="products.html">Luminaires</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="products.html">Optical Systems</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="product-detail.html">Configurator</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="downloads.html">Photometrics</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="projects.html">Projects</a>
+</nav>
+<!-- Trailing Action Icons, Language & Primary BoQ Action -->
+<div class="flex items-center gap-4 lg:gap-6">
+<!-- Icon Actions -->
+<div class="hidden sm:flex items-center gap-3 text-text-muted">
+<button aria-label="Bookmarked Luminaires" class="hover:text-primary transition-colors duration-150 p-1">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+<button aria-label="Layer Specifier" class="hover:text-primary transition-colors duration-150 p-1">
+<span class="material-symbols-outlined">layers</span>
+</button>
+</div>
+<!-- Language / Region Switcher -->
+<div class="flex items-center font-label-mono-sm text-label-mono-sm text-text-muted border-l border-border-hairline pl-4">
+<span class="text-text-alabaster">EUR</span>
+<span class="mx-1 text-border-hairline">/</span>
+<span class="text-primary">EN</span>
+</div>
+<!-- BoQ Indicator Badge -->
+<div class="hidden lg:flex items-center gap-2 px-2.5 py-1 bg-surface-container border border-primary/40 font-label-mono-sm text-label-mono-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Quote List: 3
+        </div>
+<!-- Primary Action -->
+<button onclick="window.location.href=\'quote-drawer.html\'"<button class="bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base transition-colors duration-150 font-label-mono-sm text-label-mono-sm uppercase px-4 py-2 rounded-none tracking-wider font-medium">
+          Request BoQ
+        </button>
+</div>
+</div>
+</header>
+<!-- ==================== PAGE HEADER & SPECIFIER METRICS BAR ==================== -->
+<section class="border-b border-border-hairline bg-surface-dim px-6 lg:px-16 pt-8 pb-6">
+<div class="max-w-[1920px] mx-auto">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 font-label-mono-sm text-label-mono-sm text-text-muted mb-3">
+<a class="hover:text-text-alabaster transition-colors" href="javascript:void(0)">Home</a>
+<span class="text-border-hairline">/</span>
+<a class="hover:text-text-alabaster transition-colors" href="javascript:void(0)">Architectural Catalog</a>
+<span class="text-border-hairline">/</span>
+<span class="text-primary">Specifier Matrix</span>
+</div>
+<!-- Main Headline & Monospace Technical Telemetry -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-border-hairline">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-text-alabaster tracking-tight font-light">
+            ARCHITECTURAL LUMINAIRES &amp; OPTICAL ENGINES
+          </h1>
+<p class="font-label-mono-sm text-label-mono-sm text-text-muted mt-2 tracking-wider">
+            ENGINEERED OPTICAL COLUMNS // DIN EN 60598-1 // MACADAM SDCM ≤ 2 // FULL TM-30 COLOR FIDELITY
+          </p>
+</div>
+<!-- Quick Telemetry Indicator Pills -->
+<div class="flex flex-wrap items-center gap-3 font-label-mono-sm text-label-mono-sm text-text-muted">
+<div class="px-3 py-1.5 bg-surface-container border border-border-hairline flex items-center gap-2">
+<span class="text-text-muted uppercase">Certified Photometry:</span>
+<span class="text-text-alabaster font-semibold">IES LM-79 / LM-80</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container border border-border-hairline flex items-center gap-2">
+<span class="text-text-muted uppercase">Factory Binning:</span>
+<span class="text-primary font-semibold">2-Step MacAdam</span>
+</div>
+</div>
+</div>
+<!-- Specifier Matrix Filter Active Bar & Controls -->
+<div class="pt-5 flex flex-wrap items-center justify-between gap-4">
+<!-- Active Filter Pills -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted mr-2">48 Luminaires Matching:</span>
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-raised border border-primary text-text-alabaster font-label-mono-sm text-label-mono-sm hover:border-primary/60 transition-colors">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            48V Magnetic
+            <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-raised border border-primary text-text-alabaster font-label-mono-sm text-label-mono-sm hover:border-primary/60 transition-colors">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            3000K Kelvin
+            <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-raised border border-primary text-text-alabaster font-label-mono-sm text-label-mono-sm hover:border-primary/60 transition-colors">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            UGR &lt; 16
+            <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-raised border border-primary text-text-alabaster font-label-mono-sm text-label-mono-sm hover:border-primary/60 transition-colors">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+            DALI-2 Protocol
+            <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="text-text-muted hover:text-primary font-label-mono-sm text-label-mono-sm ml-2 underline uppercase tracking-wider transition-colors">
+            Clear All Filters
+          </button>
+</div>
+<!-- Sort & View Density Switches -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<label class="font-label-mono-sm text-label-mono-sm text-text-muted">SORT:</label>
+<div class="relative">
+<select class="bg-surface-raised border border-border-hairline text-text-alabaster font-label-mono-sm text-label-mono-sm py-1.5 pl-3 pr-8 rounded-none appearance-none focus:outline-none focus:border-primary cursor-pointer">
+<option>Luminous Output (High to Low)</option>
+<option>Beam Collimation (Narrow to Wide)</option>
+<option>System Power Rating (W)</option>
+<option>Highest Color Fidelity (CRI Ra 98+)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 pointer-events-none text-text-muted text-sm">unfold_more</span>
+</div>
+</div>
+<!-- View Layout Icons -->
+<div class="hidden sm:flex border border-border-hairline">
+<button class="p-1.5 bg-surface-container text-primary border-r border-border-hairline" title="3-Column Gallery Grid">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-1.5 bg-surface-raised text-text-muted hover:text-text-alabaster" title="Dense Tabular Matrix">
+<span class="material-symbols-outlined">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== MAIN WORKSPACE (SIDEBAR + 3-COLUMN ARCHITECTURAL GRID) ==================== -->
+<div class="flex-1 flex max-w-[1920px] w-full mx-auto">
+<!-- ==================== SHARED COMPONENT: SideNavBar (Spec Engine V4.2) ==================== -->
+<aside class="w-72 shrink-0 min-h-[calc(100vh-4rem)] border-r border-border-hairline bg-surface-raised dark:bg-surface-raised flex flex-col justify-between py-6 px-4 hidden lg:flex custom-scrollbar overflow-y-auto">
+<!-- Top Engine Identity -->
+<div>
+<div class="flex items-center justify-between pb-4 mb-6 border-b border-border-hairline">
+<div>
+<div class="font-label-mono-lg text-label-mono-lg uppercase tracking-widest text-text-alabaster dark:text-text-alabaster font-semibold">
+              SPEC ENGINE
+            </div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-muted">
+              V4.2 PHOTOMETRIC
+            </div>
+</div>
+<button class="font-label-mono-sm text-label-mono-sm text-text-muted hover:text-primary transition-colors duration-150 uppercase tracking-wider">
+            Reset Spec Filters
+          </button>
+</div>
+<!-- 7 Spec Navigation Groups -->
+<div class="space-y-6">
+<!-- Tab 1: Category -->
+<div>
+<div class="flex items-center gap-2 mb-2.5 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-base">category</span>
+<span>Category</span>
+</div>
+<div class="space-y-1.5 pl-6">
+<label class="flex items-center justify-between text-text-alabaster font-label-mono-sm text-label-mono-sm cursor-pointer group">
+<span class="flex items-center gap-2">
+<input checked="" class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="group-hover:text-primary transition-colors">48V Magnetic Tracks</span>
+</span>
+<span class="text-text-muted">18</span>
+</label>
+<label class="flex items-center justify-between text-text-muted font-label-mono-sm text-label-mono-sm cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="group-hover:text-text-alabaster transition-colors">Recessed Downlights</span>
+</span>
+<span class="text-text-muted">14</span>
+</label>
+<label class="flex items-center justify-between text-text-muted font-label-mono-sm text-label-mono-sm cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="group-hover:text-text-alabaster transition-colors">Linear Profiles</span>
+</span>
+<span class="text-text-muted">9</span>
+</label>
+<label class="flex items-center justify-between text-text-muted font-label-mono-sm text-label-mono-sm cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="group-hover:text-text-alabaster transition-colors">Precision Tracklights</span>
+</span>
+<span class="text-text-muted">12</span>
+</label>
+<label class="flex items-center justify-between text-text-muted font-label-mono-sm text-label-mono-sm cursor-pointer group">
+<span class="flex items-center gap-2">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="group-hover:text-text-alabaster transition-colors">Outdoor &amp; Façade</span>
+</span>
+<span class="text-text-muted">6</span>
+</label>
+</div>
+</div>
+<!-- Tab 2: Wattage & Lumens -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-text-muted text-base">bolt</span>
+<span>Wattage &amp; Lumens</span>
+</div>
+<div class="grid grid-cols-1 gap-1.5 pl-6">
+<button class="text-left px-2 py-1.5 border border-border-hairline bg-obsidian-base hover:border-primary/50 text-text-muted font-label-mono-sm text-label-mono-sm flex justify-between">
+<span>06W – 12W</span>
+<span class="text-text-alabaster">850 lm</span>
+</button>
+<button class="text-left px-2 py-1.5 border border-primary bg-surface-container-low text-text-alabaster font-label-mono-sm text-label-mono-sm flex justify-between">
+<span>18W – 24W</span>
+<span class="text-primary font-semibold">2,300 lm</span>
+</button>
+<button class="text-left px-2 py-1.5 border border-border-hairline bg-obsidian-base hover:border-primary/50 text-text-muted font-label-mono-sm text-label-mono-sm flex justify-between">
+<span>32W – 48W</span>
+<span class="text-text-alabaster">4,500 lm</span>
+</button>
+</div>
+</div>
+<!-- Tab 3: CCT Kelvin -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-base">lightbulb</span>
+<span>CCT Kelvin</span>
+</div>
+<div class="grid grid-cols-2 gap-1.5 pl-6">
+<div class="p-1.5 border border-border-hairline bg-obsidian-base flex items-center gap-2 cursor-pointer hover:border-primary/50">
+<span class="w-3 h-3 rounded-none bg-[#FFAA44] inline-block"></span>
+<span class="font-label-mono-sm text-[10px] text-text-muted">2700K Warm</span>
+</div>
+<div class="p-1.5 border border-primary bg-surface-container flex items-center gap-2 cursor-pointer">
+<span class="w-3 h-3 rounded-none bg-[#FFC578] inline-block"></span>
+<span class="font-label-mono-sm text-[10px] text-text-alabaster font-medium">3000K Neutral</span>
+</div>
+<div class="p-1.5 border border-border-hairline bg-obsidian-base flex items-center gap-2 cursor-pointer hover:border-primary/50">
+<span class="w-3 h-3 rounded-none bg-[#FFEACC] inline-block"></span>
+<span class="font-label-mono-sm text-[10px] text-text-muted">4000K Pure</span>
+</div>
+<div class="p-1.5 border border-border-hairline bg-obsidian-base flex items-center gap-2 cursor-pointer hover:border-primary/50">
+<span class="w-3 h-3 rounded-none bg-gradient-to-r from-[#FFAA44] to-[#C8E0FF] inline-block"></span>
+<span class="font-label-mono-sm text-[10px] text-text-muted">Tunable TW</span>
+</div>
+</div>
+</div>
+<!-- Tab 4: Optical Beams -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-text-muted text-base">adjust</span>
+<span>Optical Beams</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pl-6">
+<span class="px-2 py-1 border border-border-hairline font-label-mono-sm text-[10px] text-text-muted cursor-pointer hover:border-primary/50">10° Pin</span>
+<span class="px-2 py-1 border border-primary bg-surface-container font-label-mono-sm text-[10px] text-text-alabaster cursor-pointer">24° Accent</span>
+<span class="px-2 py-1 border border-border-hairline font-label-mono-sm text-[10px] text-text-muted cursor-pointer hover:border-primary/50">36° Flood</span>
+<span class="px-2 py-1 border border-border-hairline font-label-mono-sm text-[10px] text-text-muted cursor-pointer hover:border-primary/50">Wallwash Asym</span>
+</div>
+</div>
+<!-- Tab 5: UGR Glare Index -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-base">visibility</span>
+<span>UGR Glare Index</span>
+</div>
+<div class="grid grid-cols-3 gap-1 pl-6">
+<button class="py-1 text-center border border-border-hairline font-label-mono-sm text-[10px] text-text-muted hover:border-primary/50">&lt; 10</button>
+<button class="py-1 text-center border border-primary bg-surface-container font-label-mono-sm text-[10px] text-text-alabaster font-semibold">&lt; 16</button>
+<button class="py-1 text-center border border-border-hairline font-label-mono-sm text-[10px] text-text-muted hover:border-primary/50">&lt; 19</button>
+</div>
+</div>
+<!-- Tab 6: Ingress Protection IP -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-text-muted text-base">shield</span>
+<span>Ingress Protection IP</span>
+</div>
+<div class="flex gap-1.5 pl-6 font-label-mono-sm text-[10px]">
+<span class="flex-1 py-1 text-center border border-border-hairline text-text-muted hover:border-primary/50 cursor-pointer">IP20 Clean</span>
+<span class="flex-1 py-1 text-center border border-border-hairline text-text-muted hover:border-primary/50 cursor-pointer">IP54 Damp</span>
+<span class="flex-1 py-1 text-center border border-border-hairline text-text-muted hover:border-primary/50 cursor-pointer">IP65 Exterior</span>
+</div>
+</div>
+<!-- Tab 7: Control Protocol -->
+<div>
+<div class="flex items-center gap-2 mb-2 text-text-alabaster font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-primary text-base">tune</span>
+<span>Control Protocol</span>
+</div>
+<div class="space-y-1 pl-6 font-label-mono-sm text-label-mono-sm">
+<label class="flex items-center gap-2 text-text-muted cursor-pointer hover:text-text-alabaster">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span>Phase-Cut Dim</span>
+</label>
+<label class="flex items-center gap-2 text-text-alabaster cursor-pointer">
+<input checked="" class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span class="text-primary font-medium">DALI-2 / PUSH-DIM</span>
+</label>
+<label class="flex items-center gap-2 text-text-muted cursor-pointer hover:text-text-alabaster">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span>0-10V Analog</span>
+</label>
+<label class="flex items-center gap-2 text-text-muted cursor-pointer hover:text-text-alabaster">
+<input class="rounded-none bg-obsidian-base border-border-hairline text-primary focus:ring-0 w-3.5 h-3.5" type="checkbox"/>
+<span>Casambi BLE Mesh</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- SideNavBar Footer Actions -->
+<div class="pt-6 border-t border-border-hairline space-y-2">
+<a class="flex items-center justify-between px-3 py-2 border border-border-hairline bg-obsidian-base hover:border-primary/60 text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors" href="javascript:void(0)">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span>
+            Export Photometric IES
+          </span>
+<span class="text-[9px] px-1 bg-surface-container text-primary">.ZIP</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2 border border-border-hairline bg-obsidian-base hover:border-primary/60 text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors" href="javascript:void(0)">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">database</span>
+            BIM / Revit Library
+          </span>
+<span class="text-[9px] px-1 bg-surface-container text-text-muted">RFA</span>
+</a>
+</div>
+</aside>
+<!-- ==================== MAIN CONTENT: 3-COLUMN ARCHITECTURAL GALLERY GRID ==================== -->
+<main class="flex-1 p-6 lg:p-10 bg-obsidian-base overflow-x-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+<!-- CARD 1: LUMENX-M24 Accent Spotlight (USING USER ATTACHED IMAGE) -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img alt="LUMENX-M24 Accent Spotlight fixture with honeycomb snoot" class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCSmYj33CmHUThBiiD1JV7kYrndEGnTk_E_n18aYlD6QHFcijg9awfnR31iHqXWdYixEdJN2-NeuwUoQdsRwzn2uKYi8eufLEHKwINGd_wx8XTaOT7BEYc9b0mk0gGVYbbCZSSnFZeD8d25_rkcHlrpH22MOQj4ckqm_3H9hzEmKXO9slRZWu5A1LFFr_joi9pN61HTGU9VjiwNyuIEzGYPu5iQ_GPgOzKr2itH_lP6"/>
+<!-- Top Badges -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">48V MAGNETIC</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">UGR &lt; 14</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">HONEYCOMB LOUVER</span>
+</div>
+</div>
+<!-- Product Details Deck -->
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-48M-24W</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                LUMENX-M24 Accent Spotlight
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Precision track fixture milled from billet aluminum with interchangeable optical collimator and micro-hexagonal glare cut-off.
+              </p>
+<!-- Technical Metric Table Rows -->
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">24W // 2,300 lm</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">3000K Warm Neutral · CRI Ra 97</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">24° Medium Accent</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">Integrated DALI-2 Bus</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 2: MAGNALINE-48 Recessed Linear Lens -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Sleek architectural black anodized recessed linear light fixture integrated flush into a minimalist dark graphite ceiling surface. Narrow dark micro-louvers cast a controlled warm white photometric downward glow. Architectural high-end studio photography with stark geometric lines and moody museum atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvl0FCuwy2wGXYvip2bqSTff4OR0iF2t0tWTtacHf2C0o-myEUNENf6GoDPs90cvdenUiBixehkqKDapVZxL8DOgdg9z3eG75ZYxvuRrL046_EwaaeNfC6nTwjVesxSAki-0zgKEqqn1Hx3gi-q8Wmaogwe8c6fP6vcYoU9d4CbL2dzxbEQetgdAmceT1rwREVRUQuvfSWTTQ60Xrx9SiHkM42S2pvP5JLhMZ6nMEzD_AA9i_mfFxB_fxZxNSf1qyzzgTQnLQh1PA"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">48V MAGNETIC</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">UGR &lt; 10</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">MICRO-LOUVER</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-LIN-48-1200</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                MAGNALINE-48 Recessed Linear
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Flush modular dark-light linear insertion with black specular louvers providing absolute glare elimination in executive and gallery corridors.
+              </p>
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">32W // 3,100 lm</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">3000K Pure · CRI Ra 98</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">45° Controlled Longitudinal</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">DALI-2 DT6 &amp; PUSH</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 3: AURA-R75 Architectural Recessed Downlight -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Architectural round trimless recessed downlight ceiling fixture rendered against dark seamless matte background. Deep black stepped internal baffle with precision TIR glass lens radiating a concentrated 3000K warm beam downward. Premium European luxury luminaire design, crisp industrial aesthetic with refined metallic rim." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx_wOZf8zzBZ0-NvBLFJ0QX2FOGKeTCzm99Uh1Q3HiUQBPDGBCiQCmBKLhYVGuNaOFnTaXEIhawS6mCFc-_Fkx03ewHZFAGEXv0rbfxdRxJTkygHpoI8bs4k9aouMk4hSoTr-CcITqDMuOb2M0fm9k6HMMPWdF3lqVdATqEP_FyC8GCzNk33ONMdXylI0PkehyVRARyXJJY0SwRC9t8EzNCHSOQaQWAp32uQ2yd30sLbbh7Dw76UliXxmXcQEYdnT_J6SqGw_cC7U"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">TRIMLESS REC</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">IP54 WET</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">DEEP BAFFLE</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-DL-R75-18W</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                AURA-R75 Recessed Downlight
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Ultra-deep recess architectural downlight engineered with modular thermal sink, IP54 gasket shield, and soft-edge perimeter falloff.
+              </p>
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">18W // 1,850 lm</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">3000K Neutral · CRI Ra 96</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">36° Wide Flood Optic</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">Remote DALI-2 / 0-10V</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 4: CYLINDRA-T50 Zoom Track Projector -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Matte black cylindrical architectural gallery spotlight with continuous mechanical zoom barrel and calibrated rotation ring. Clean German engineering product photography isolated in an optical darkroom void with subtle golden-amber highlights tracing along the anodized edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7SllacikoFVyM8-y5B7xKr91iidsxkkhTNQHmXRo1ZUedFWyBq0LllIYc9EjNRNWb1kx4yet6YHRycgUymm6uZO6myAT8FO-49OYsRNtOSQQkCJnbu6nN74HUVZ18MjjrRlbEkKuSTmUuiM9tIWLp11axA9RyxeNJ7wU5RwuS_B1QsIu3_XOCwReOTjzRXwyjdJLDvck0IsQMLHJmtzPQFiIOd2yT-IvPmj7WUAgDMSbVSiCHRIT66IAIdpEEg5ryQRUfEYDVYCw"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">3-CIRCUIT TRACK</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">12°–48° ZOOM</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">MECHANICAL ZOOM</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-TRK-Z50-28W</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                CYLINDRA-T50 Zoom Track
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Mechanical stepless zoom optical projector for museum vitrines and changing fine art exhibits with integrated potentiometric dimmer.
+              </p>
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">28W // 2,600 lm</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">Tunable 2700K–4000K · CRI Ra 97</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">12° to 48° Continuous Variable</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">Casambi BLE Wireless Node</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 5: STEALTH-W48 Architectural Wall Grazing System -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="High precision asymmetric wall-grazer luminaire mounted close to a textured raw concrete wall, projecting dramatic vertical light wash and controlled optical lines upward. Dark industrial architectural environment, high contrast monochrome photography with warm 3000K illumination highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGvVBuQtSzhfNd5unLxPyfXZ0E9lQbPm-hN4vOFjI_WgrgP5TrCGDGHPeOUhDkyzpbj0vYdSI811rA9o0maKgYx0P2f2T2Bie6a29LnJ63_Zag0gYC5Vo-xFeWNB8zR317quxU1Wmhe3cSeGyjOZPa-U1w328azaJWCED--_Qm6qZKvk-nTtgJUCy2hIjKWqSPrSMV88AdjliMqbdB4ZR1t1DkEpWgU8duot7P16hOcW2gwjgfgyefc4iEdb0-mZ9xtSpFnoHo3G0"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">IP65 FAÇADE</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">ASYM GRAZE</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">WALLWASH OPTIC</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-WL-AS-900</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                STEALTH-W48 Wall Grazing
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Asymmetric optical wall grazer engineered for indoor concrete columns and outdoor stone façades with continuous end-to-end illumination.
+              </p>
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">22W // 2,100 lm</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">3000K Architectural · CRI Ra 95</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">15° x 65° Asymmetric Batwing</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">Integrated DALI-2 Driver</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+<!-- CARD 6: ORBITA-48 Pendant Minimalist Ring -->
+<article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
+<!-- Image Stage -->
+<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist suspended circular architectural luminaire ring crafted in dark champagne bronze metal floating against an obsidian darkroom studio background. Direct downward precision downlights paired with indirect diffused ceiling ambient aura. Sophisticated high-end luxury fixture rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJOyuKKmiBX__O8xIXypFbsPmTEFuuCpMgFjlybN9ubIT6Y31oj7SSiMpPRTKy--2eSIAYN_727ehatUDwJftWDk3MGPWQ7h0iPIKmropxROWuAx--qdxOiZeB9e3fnyAVYbp6PPr2eMQ4fNxeJJGKJ_3sRtdAFxxpXqCf6DtxOap8vuonrTCAYrqJcqDJ7nGhKQbzfXZP0wRacYcqLA_Dzv0YiRph7thiQWdFS-9LC50PIrBlKeu_nPyQEQX5a2bH3G6iWE8FUN8"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">DIRECT / INDIRECT</span>
+<span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">Ø 1000mm</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">PENDANT RING</span>
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-2 mb-1">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SKU: ALP-RNG-48-1000</span>
+<span class="font-label-mono-sm text-[11px] text-text-muted">SDCM ≤ 2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster font-normal mb-3">
+                ORBITA-48 Pendant Ring
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-4 line-clamp-2">
+                Seamless rolled aluminum profile with discrete recessed micro-spots for direct work surfaces and top-mounted opal diffuser for ambient bounce.
+              </p>
+<div class="border-t border-border-hairline font-label-mono-sm text-label-mono-sm divide-y divide-border-hairline mb-5">
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Output / Power</span>
+<span class="text-text-alabaster">42W // 4,100 lm Total</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Color Quality</span>
+<span class="text-text-alabaster">3000K Warm Neutral · CRI Ra 95</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Optical Distribution</span>
+<span class="text-text-alabaster">Opal 110° Up / 30° Spots Down</span>
+</div>
+<div class="py-1.5 flex justify-between items-center">
+<span class="text-text-muted uppercase">Protocol Driver</span>
+<span class="text-text-alabaster">Dual-Channel DALI-2 DMX</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>.PDF</span>
+</a>
+<button class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">add</span>
+                Add to BoQ
+              </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination & Grid Metrics Footer -->
+<div class="mt-12 pt-6 border-t border-border-hairline flex flex-col sm:flex-row items-center justify-between gap-4 font-label-mono-sm text-label-mono-sm text-text-muted">
+<div>
+          Showing <span class="text-text-alabaster">1–6</span> of <span class="text-text-alabaster">48</span> Technical Luminaire Models
+        </div>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 border border-border-hairline bg-surface-raised hover:border-text-muted text-text-alabaster disabled:opacity-40" disabled="">
+            Prev
+          </button>
+<button class="px-3 py-1.5 border border-primary bg-primary text-obsidian-base font-semibold">
+            1
+          </button>
+<button class="px-3 py-1.5 border border-border-hairline bg-surface-raised hover:border-primary/50 text-text-alabaster">
+            2
+          </button>
+<button class="px-3 py-1.5 border border-border-hairline bg-surface-raised hover:border-primary/50 text-text-alabaster">
+            3
+          </button>
+<button class="px-3 py-1.5 border border-border-hairline bg-surface-raised hover:border-primary/50 text-text-alabaster">
+            4
+          </button>
+<button class="px-3 py-1.5 border border-border-hairline bg-surface-raised hover:border-text-muted text-text-alabaster">
+            Next
+          </button>
+</div>
+</div>
+</main>
+</div>
+<!-- ==================== DOCKED SPECIFIER BOQ DOCK TRAY ==================== -->
+<div class="sticky bottom-0 z-40 bg-surface-raised/95 backdrop-blur-md border-t border-border-hairline px-6 lg:px-16 py-3.5">
+<div class="max-w-[1920px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-2.5 h-2.5 bg-primary animate-ping"></div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-alabaster">
+<span class="text-primary font-semibold">Active Project Spec:</span> 3 Luminaires Staged (ALP-48M, ALP-LIN, ALP-DL)
+        </div>
+<div class="hidden xl:flex items-center gap-3 font-label-mono-sm text-label-mono-sm text-text-muted border-l border-border-hairline pl-4">
+<span>Total Connected Load: <strong class="text-text-alabaster font-mono">74.0W</strong></span>
+<span>//</span>
+<span>MacAdam: <strong class="text-text-alabaster">SDCM ≤ 2</strong></span>
+<span>//</span>
+<span>DIALux Engine: <strong class="text-primary">Ready (.UFI)</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<button class="flex-1 md:flex-none px-4 py-2 border border-border-hairline bg-obsidian-base hover:border-text-muted font-label-mono-sm text-label-mono-sm text-text-muted hover:text-text-alabaster transition-colors">
+          Clear BoQ Tray
+        </button>
+<button class="flex-1 md:flex-none px-5 py-2 bg-primary border border-primary text-obsidian-base font-label-mono-sm text-label-mono-sm font-semibold uppercase tracking-wider hover:bg-surface-tint transition-colors flex items-center justify-center gap-2">
+<span>Review BoQ &amp; Generate Tender Package</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ==================== SHARED COMPONENT: Footer ==================== -->
+<footer class="bg-obsidian-base dark:bg-obsidian-base w-full border-t border-border-hairline flat no shadows transition-colors duration-150 ease-out">
+<div class="w-full px-6 lg:px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Global Locations -->
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-label-mono-sm text-label-mono-sm uppercase text-text-alabaster dark:text-text-alabaster tracking-widest font-semibold flex items-center gap-2">
+<span class="w-2 h-2 bg-primary inline-block"></span>
+          ALPANI INSTRUMENTS AG
+        </div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-muted">
+          Frankfurt · Zurich · Dubai · Tokyo
+        </div>
+<div class="font-body-sm text-body-sm text-text-muted text-center md:text-left mt-2">
+          © 2025 ALPANI INSTRUMENTS AG. PRECISION ARCHITECTURAL LIGHTING. ALL RIGHTS RESERVED.
+        </div>
+</div>
+<!-- Footer Specification Links -->
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 font-label-mono-sm text-label-mono-sm">
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Photometric Engine (IES/LDT)
+        </a>
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Dialux Plugin
+        </a>
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Architect Portal
+        </a>
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Terms of Specification
+        </a>
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Compliance &amp; ISO 9001
+        </a>
+<a class="text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary transition-colors duration-150" href="javascript:void(0)">
+          Contact Engineering Lab
+        </a>
+</div>
+</div>
+</footer>
+<script>
+    // Micro-interactions for interactive Specifier Matrix
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        if (this.innerText.includes('Add to BoQ')) {
+          e.preventDefault();
+          const orig = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined text-base">check</span> Added to BoQ';
+          this.classList.add('bg-primary', 'text-obsidian-base');
+          setTimeout(() => {
+            this.innerHTML = orig;
+            this.classList.remove('bg-primary', 'text-obsidian-base');
+          }, 1600);
+        }
+      });
+    });
+  </script>
+</body></html>
+

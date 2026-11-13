@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alpani Lighting - Technical Downloads &amp; Engineering Asset Center</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Typography Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Container Queries & Forms -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#343538",
+            "surface-bright": "#38393c",
+            "kelvin-amber": "#E5B86E",
+            "inverse-on-surface": "#303034",
+            "surface-container-high": "#292a2d",
+            "text-muted": "#94A3B8",
+            "secondary-container": "#3a4a5f",
+            "inverse-primary": "#7e5713",
+            "on-background": "#e3e2e6",
+            "on-secondary-container": "#a9bad3",
+            "secondary-fixed-dim": "#b7c8e1",
+            "tertiary": "#eec075",
+            "primary-fixed-dim": "#f2be71",
+            "surface-container-lowest": "#0d0e11",
+            "tertiary-container": "#d0a55d",
+            "surface": "#121316",
+            "surface-variant": "#343538",
+            "primary-container": "#d4a359",
+            "on-tertiary-fixed-variant": "#5f4100",
+            "on-error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#614000",
+            "secondary-fixed": "#d3e4fe",
+            "on-primary-fixed": "#291800",
+            "on-primary": "#442b00",
+            "error": "#ffb4ab",
+            "surface-container-low": "#1b1b1f",
+            "primary": "#f2be71",
+            "tertiary-fixed": "#ffdeac",
+            "border-light": "#E2E8F0",
+            "on-tertiary-fixed": "#281900",
+            "on-error": "#690005",
+            "on-secondary": "#213145",
+            "text-alabaster": "#F8F9FA",
+            "surface-dim": "#121316",
+            "surface-raised": "#121316",
+            "surface-container": "#1f1f23",
+            "outline": "#9c8f7f",
+            "outline-variant": "#4f4538",
+            "error-container": "#93000a",
+            "on-secondary-fixed": "#0b1c30",
+            "obsidian-base": "#0D0E11",
+            "secondary": "#b7c8e1",
+            "on-surface-variant": "#d3c4b3",
+            "on-tertiary": "#432c00",
+            "background": "#121316",
+            "on-tertiary-container": "#573b00",
+            "on-surface": "#e3e2e6",
+            "border-hairline": "#27272A",
+            "inverse-surface": "#e3e2e6",
+            "tertiary-fixed-dim": "#edbf75",
+            "on-primary-container": "#583a00",
+            "surface-tint": "#f2be71",
+            "primary-fixed": "#ffddb1",
+            "on-secondary-fixed-variant": "#38485d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "margin-desktop": "4rem",
+            "margin": "1.5rem",
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "2.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-mono-sm": ["JetBrains Mono"],
+            "body-lg": ["Inter"],
+            "label-mono-lg": ["JetBrains Mono"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }],
+            "label-mono-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-mono-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .bloom-glow {
+      box-shadow: 0 0 35px -5px rgba(212, 163, 89, 0.18);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0D0E11;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #27272A;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #D4A359;
+    }
+  </style>
+</head>
+<body class="bg-obsidian-base text-on-surface min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary-container selection:text-obsidian-base">
+<!-- TopNavBar (Shared Component Execution) -->
+<header class="docked full-width top-0 sticky z-50 bg-obsidian-base/90 dark:bg-obsidian-base/90 backdrop-blur-md border-b border-border-hairline flat no shadows">
+<div class="flex justify-between items-center w-full px-6 lg:px-16 h-16">
+<!-- Brand & Global Search -->
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3" href="#">
+<span class="w-3 h-3 bg-primary-container border border-primary inline-block"></span>
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-text-alabaster dark:text-text-alabaster font-medium">ALPANI INSTRUMENTS</span>
+</a>
+<!-- Search bar on left -->
+<div class="relative hidden xl:flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-muted pointer-events-none" data-icon="search">search</span>
+<input class="bg-surface border border-border-hairline text-text-alabaster font-label-mono-sm text-label-mono-sm pl-9 pr-14 py-1.5 focus:border-primary focus:ring-0 w-72 rounded-none transition-colors duration-150" placeholder="Search photometrics, SKU, beam angle..." type="text"/>
+<div class="absolute right-2 px-1.5 py-0.5 border border-border-hairline text-[10px] font-label-mono-sm text-text-muted bg-obsidian-base">⌘K</div>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="products.html">Luminaires</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="products.html">Optical Systems</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="product-detail.html">Configurator</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="downloads.html">Downloads</a>
+<a class="text-text-muted dark:text-text-muted hover:text-text-alabaster dark:hover:text-text-alabaster transition-colors duration-150 font-body-md text-body-md" href="projects.html">Projects</a>
+<a class="text-primary dark:text-primary border-b border-primary dark:border-primary pb-1 font-body-md text-body-md" href="downloads.html">Downloads</a>
+</nav>
+<!-- Trailing Primary & Icon Actions -->
+<div class="flex items-center gap-4">
+<!-- BoQ Staged Counter -->
+<button onclick="window.location.href='quote-drawer.html'" class="flex items-center gap-2 px-3 py-1.5 border border-border-hairline bg-surface hover:border-primary/50 transition-colors duration-150 group">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors" data-icon="layers">layers</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-alabaster">Request BoQ</span>
+<span class="px-1.5 py-0.2 bg-primary-container text-obsidian-base font-label-mono-sm text-[10px] font-semibold">3</span>
+</button>
+<!-- Currency / Locale -->
+<button class="px-2.5 py-1.5 border border-border-hairline text-text-muted font-label-mono-sm text-label-mono-sm hover:text-text-alabaster hover:border-primary/50 transition-colors duration-150">
+          EUR / EN
+        </button>
+<!-- Bookmarks Icon -->
+<button class="p-2 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-primary/50 transition-colors duration-150">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full px-6 lg:px-16 py-10 max-w-[1720px] mx-auto space-y-12">
+<!-- Breadcrumbs & Hero Header Section -->
+<section class="space-y-6">
+<!-- Breadcrumb Path -->
+<nav class="flex items-center gap-2 font-label-mono-sm text-label-mono-sm text-text-muted uppercase">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<span class="text-border-hairline">/</span>
+<a class="hover:text-primary transition-colors" href="#">Engineering</a>
+<span class="text-border-hairline">/</span>
+<span class="text-primary font-medium">Technical Downloads</span>
+</nav>
+<!-- Page Title & Optical Subtitle -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-6 border-b border-border-hairline pb-8">
+<div class="space-y-3 max-w-4xl">
+<h1 class="font-headline-xl text-headline-xl text-text-alabaster tracking-tight">
+            TECHNICAL DOWNLOADS &amp; ARCHITECTURAL ASSETS
+          </h1>
+<p class="font-label-mono-sm text-label-mono-sm text-text-muted leading-relaxed tracking-wider">
+            ACCESS CERTIFIED IES/LDT PHOTOMETRIC DATA, 2D CAD DWG, REVIT BIM FAMILIES (LOD 300), AND ARCHITECTURAL MONOGRAPHS // ALL ASSETS VERIFIED TO CIE / IES LM-79 STANDARDS
+          </p>
+</div>
+<!-- Verification Badges (Precision Mono Chips) -->
+<div class="flex flex-wrap items-center gap-2 shrink-0">
+<div class="px-2.5 py-1 bg-surface border border-border-hairline flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-alabaster">IES LM-79 / LM-80 CERTIFIED</span>
+</div>
+<div class="px-2.5 py-1 bg-surface border border-border-hairline flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-alabaster">BIM LOD 300 VERIFIED</span>
+</div>
+<div class="px-2.5 py-1 bg-surface border border-border-hairline flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-alabaster">DIALUX EVO COMPATIBLE</span>
+</div>
+<div class="px-2.5 py-1 bg-surface border border-border-hairline flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-alabaster">ISO 9001 COMPLIANT</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Quick Download Bulk Packages (Bento Grid 3-Card Split) -->
+<section class="space-y-4">
+<div class="flex justify-between items-baseline">
+<h2 class="font-label-mono-lg text-label-mono-lg uppercase tracking-widest text-text-alabaster flex items-center gap-2">
+<span class="w-2 h-2 bg-primary inline-block"></span>
+          01 // BULK SPECIFICATION ARCHIVES [EXPEDITED SYNC]
+        </h2>
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted">UPDATED 04 JAN 2026 // BATCH COMPILATION</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Package 1: Photometrics Bundle -->
+<div class="bg-surface border border-border-hairline p-6 flex flex-col justify-between hover:border-primary/60 transition-all duration-150 group relative">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-mono-sm text-label-mono-sm text-primary px-2 py-0.5 border border-primary/40 bg-surface-container-low">PKG-IES-26</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted">85 MB // .ZIP</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster group-hover:text-primary transition-colors">
+                All IES Photometrics Bundle 2026
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-2">
+                48 certified luminaire optical distributions. Contains both EULUMDAT .LDT and IESNA .IES formats with polar candela distribution curves and TM-30 vectors.
+              </p>
+</div>
+<!-- Technical specs list -->
+<div class="border-t border-border-hairline pt-3 space-y-1 font-label-mono-sm text-label-mono-sm">
+<div class="flex justify-between text-text-muted">
+<span>LUMINAIRE RANGE</span>
+<span class="text-text-alabaster font-mono">48 Models</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>STANDARDS</span>
+<span class="text-text-alabaster font-mono">CIE 121 / IESNA LM-79</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>POLAR CURVES</span>
+<span class="text-text-alabaster font-mono">Full Candela Grids</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex items-center justify-between gap-3">
+<div class="flex gap-1.5 font-label-mono-sm text-[10px]">
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-primary">.IES</span>
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-text-muted">.LDT</span>
+</div>
+<button class="px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider flex items-center gap-2 transition-all duration-150">
+<span class="material-symbols-outlined text-[16px]" data-icon="download">download</span>
+              Download Bundle
+            </button>
+</div>
+</div>
+<!-- Package 2: 2D/3D CAD & BIM Library -->
+<div class="bg-surface border border-border-hairline p-6 flex flex-col justify-between hover:border-primary/60 transition-all duration-150 group relative">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary px-2 py-0.5 border border-secondary/40 bg-surface-container-low">PKG-BIM-26</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted">420 MB // .ZIP</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster group-hover:text-primary transition-colors">
+                Complete 2D/3D CAD &amp; BIM Library
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-2">
+                Parametric Autodesk Revit .RVT LOD 300 families, dimensional 2D/3D AutoCAD .DWG vectors, and STEP/IGES models for technical detailing.
+              </p>
+</div>
+<!-- Technical specs list -->
+<div class="border-t border-border-hairline pt-3 space-y-1 font-label-mono-sm text-label-mono-sm">
+<div class="flex justify-between text-text-muted">
+<span>BIM MATURITY</span>
+<span class="text-text-alabaster font-mono">LOD 300 Parametric</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>REVIT VERSIONS</span>
+<span class="text-text-alabaster font-mono">2022 - 2026 Compatible</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>CAD FORMATS</span>
+<span class="text-text-alabaster font-mono">DWG, DXF, STP, OBJ</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex items-center justify-between gap-3">
+<div class="flex gap-1.5 font-label-mono-sm text-[10px]">
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-secondary">.RVT</span>
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-text-muted">.DWG</span>
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-text-muted">.STP</span>
+</div>
+<button class="px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider flex items-center gap-2 transition-all duration-150">
+<span class="material-symbols-outlined text-[16px]" data-icon="download">download</span>
+              Download Library
+            </button>
+</div>
+</div>
+<!-- Package 3: Master Monograph 2026 -->
+<div class="bg-surface border border-border-hairline p-6 flex flex-col justify-between hover:border-primary/60 transition-all duration-150 group relative">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary px-2 py-0.5 border border-tertiary/40 bg-surface-container-low">VOL-ARCH-01</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted">140 MB // .PDF</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-alabaster group-hover:text-primary transition-colors">
+                Architectural Master Monograph 2026
+              </h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-2">
+                320 pages of built works, optical raytracing schematics, mechanical cross-sections, thermal performance metrics, and lux lookup matrices.
+              </p>
+</div>
+<!-- Technical specs list -->
+<div class="border-t border-border-hairline pt-3 space-y-1 font-label-mono-sm text-label-mono-sm">
+<div class="flex justify-between text-text-muted">
+<span>PAGINATION</span>
+<span class="text-text-alabaster font-mono">320 Color Plates</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>RESOLUTION</span>
+<span class="text-text-alabaster font-mono">300 DPI Print Spec</span>
+</div>
+<div class="flex justify-between text-text-muted">
+<span>SYSTEM INDEX</span>
+<span class="text-text-alabaster font-mono">Complete Linecard</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex items-center justify-between gap-3">
+<div class="flex gap-1.5 font-label-mono-sm text-[10px]">
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-tertiary">.PDF</span>
+<span class="px-1.5 py-0.5 bg-obsidian-base border border-border-hairline text-text-muted">HIGH-RES</span>
+</div>
+<button class="px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider flex items-center gap-2 transition-all duration-150">
+<span class="material-symbols-outlined text-[16px]" data-icon="download">download</span>
+              Download Monograph
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Filterable Technical Asset Table & Specification Matrix -->
+<section class="space-y-6">
+<!-- Section Title & Filter Controls Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-border-hairline pb-4">
+<div>
+<h2 class="font-label-mono-lg text-label-mono-lg uppercase tracking-widest text-text-alabaster flex items-center gap-2">
+<span class="w-2 h-2 bg-primary inline-block"></span>
+            02 // SPECIFICATION ASSET REPOSITORY [MATRIX VIEW]
+          </h2>
+<p class="font-label-mono-sm text-label-mono-sm text-text-muted mt-1">DIRECT INDIVIDUAL FILE DOWNLOADS FOR LUMINAIRE SYSTEMS &amp; OPTICAL ENGINES</p>
+</div>
+<!-- Matrix Global Search -->
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-text-muted pointer-events-none" data-icon="search">search</span>
+<input class="w-full bg-surface border border-border-hairline text-text-alabaster font-label-mono-sm text-label-mono-sm pl-9 pr-4 py-2 focus:border-primary focus:ring-0 rounded-none transition-colors duration-150" placeholder="Filter by luminaire name, SKU, or optical code..." type="text"/>
+</div>
+</div>
+<!-- Primary Discipline Tabs (Architectural Sharp Rectangles) -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3.5 py-2 bg-surface-container-low border border-primary text-text-alabaster font-label-mono-sm text-label-mono-sm flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>All Assets (128)</span>
+</button>
+<button class="px-3.5 py-2 bg-surface border border-border-hairline hover:border-text-muted text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors">
+          IES / Photometrics (48)
+        </button>
+<button class="px-3.5 py-2 bg-surface border border-border-hairline hover:border-text-muted text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors">
+          BIM / Revit LOD 300 (32)
+        </button>
+<button class="px-3.5 py-2 bg-surface border border-border-hairline hover:border-text-muted text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors">
+          CAD 2D/3D DWG (24)
+        </button>
+<button class="px-3.5 py-2 bg-surface border border-border-hairline hover:border-text-muted text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors">
+          Master Catalogues (14)
+        </button>
+<button class="px-3.5 py-2 bg-surface border border-border-hairline hover:border-text-muted text-text-muted hover:text-text-alabaster font-label-mono-sm text-label-mono-sm transition-colors">
+          Compliance &amp; CE/ENEC (10)
+        </button>
+</div>
+<!-- Secondary Filters Bar: System Family & Format Pill Selectors -->
+<div class="bg-surface-raised border border-border-hairline p-4 flex flex-col md:flex-row items-center justify-between gap-4 font-label-mono-sm text-label-mono-sm">
+<div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+<span class="text-text-muted uppercase text-[10px] tracking-wider">SYSTEM FAMILY:</span>
+<button class="px-2.5 py-1 border border-border-hairline bg-obsidian-base text-text-alabaster hover:border-primary/50 transition-colors">All Families</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-border-hairline/80 transition-colors">48V MagnaTrack</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-border-hairline/80 transition-colors">Downlights</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-border-hairline/80 transition-colors">Linear Profiles</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-border-hairline/80 transition-colors">Projectors</button>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto">
+<span class="text-text-muted uppercase text-[10px] tracking-wider">FORMAT FILTER:</span>
+<span class="px-2 py-0.5 border border-border-hairline bg-obsidian-base text-primary">.IES</span>
+<span class="px-2 py-0.5 border border-border-hairline bg-obsidian-base text-secondary">.RVT</span>
+<span class="px-2 py-0.5 border border-border-hairline bg-obsidian-base text-text-muted">.DWG</span>
+<span class="px-2 py-0.5 border border-border-hairline bg-obsidian-base text-tertiary">.PDF</span>
+</div>
+</div>
+<!-- Main Specifications Data Table -->
+<div class="border border-border-hairline bg-surface overflow-x-auto custom-scrollbar">
+<table class="w-full text-left border-collapse min-w-[1040px]">
+<thead>
+<tr class="border-b border-border-hairline bg-obsidian-base/60 font-label-mono-sm text-label-mono-sm text-text-muted uppercase tracking-wider">
+<th class="py-3.5 px-4 w-12 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4">Asset / Luminaire Model &amp; SKU</th>
+<th class="py-3.5 px-4">Category / Discipline</th>
+<th class="py-3.5 px-4">Optical &amp; Technical Spec</th>
+<th class="py-3.5 px-4">Format</th>
+<th class="py-3.5 px-4">Release / Version</th>
+<th class="py-3.5 px-4">Size</th>
+<th class="py-3.5 px-4 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-hairline font-label-mono-sm text-label-mono-sm">
+<!-- Row 1: LUMENX-M24 Tracklight (IES) -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="lightbulb">lightbulb</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      LUMENX-M24 48V Magnetic Accent Spotlight
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-48M-24W-830-SP15</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">Photometric Raytrace</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">15° SP / 2,150 lm / CRI Ra ≥ 97</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-primary/50 text-primary bg-primary/10">.IES + .LDT</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v4.2 // Jan 2026</td>
+<td class="py-4 px-4 text-text-muted font-mono">1.8 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 2: LUMENX-M24 Revit BIM -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[18px]" data-icon="database">database</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      LUMENX-M24 Revit BIM Family Package
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-48M-24W-BIM</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">BIM Revit Family</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">LOD 300 / Parametric MEP Connector</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-secondary/50 text-secondary bg-secondary/10">.RVT</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v3.8 // Dec 2025</td>
+<td class="py-4 px-4 text-text-muted font-mono">24.5 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 3: MagnaLine-48 Linear Inset Photometrics -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input checked="" class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="adjust">adjust</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      MagnaLine-48 Recessed Linear Inset
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-ML48-1200-Opal</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">Photometric Polar Model</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">110° Diffuse / 3,400 lm / UGR &lt; 19</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-primary/50 text-primary bg-primary/10">.IES</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v4.0 // Jan 2026</td>
+<td class="py-4 px-4 text-text-muted font-mono">0.9 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 4: MagnaLine-48 CAD Profile Detail -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-text-muted">
+<span class="material-symbols-outlined text-[18px]" data-icon="category">category</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      MagnaLine-48 CAD Profile Extrusion Detail
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-ML48-EXT-2D</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">2D Ceiling Section DWG</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">1:1 Section Detail / Millimeter Tolerance</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-text-muted text-text-alabaster bg-obsidian-base">.DWG</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v2.4 // Oct 2025</td>
+<td class="py-4 px-4 text-text-muted font-mono">3.4 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 5: AURA-R75 Trimless Downlight Revit -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[18px]" data-icon="database">database</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      AURA-R75 Trimless Architectural Downlight
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-AURA-R75-TR</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">BIM Revit Family</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">LOD 300 / Gypsum Flush Mount Detail</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-secondary/50 text-secondary bg-secondary/10">.RVT</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v5.1 // Jan 2026</td>
+<td class="py-4 px-4 text-text-muted font-mono">18.2 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 6: AURA-R75 Photometric Rayfile -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="bolt">bolt</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      AURA-R75 Photometric Rayfile Batch
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-AURA-R75-ALL-IES</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">Photometric Package</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">18° / 28° / 42° Optics // 1,850 lm // CRI 98</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-primary/50 text-primary bg-primary/10">.IES + .LDT</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v5.1 // Jan 2026</td>
+<td class="py-4 px-4 text-text-muted font-mono">2.1 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 7: CYLINDRA-T50 Museum Tracklight (CAD) -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-text-muted">
+<span class="material-symbols-outlined text-[18px]" data-icon="adjust">adjust</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      CYLINDRA-T50 Zoom Museum Projector
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-CYL-T50-ZM</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">CAD 2D/3D DWG Geometry</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">Zoom Optics 8°-40° Continuous Focus</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-text-muted text-text-alabaster bg-obsidian-base">.DWG</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v1.9 // Nov 2025</td>
+<td class="py-4 px-4 text-text-muted font-mono">7.8 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 8: STEALTH-W48 Wall Grazer Spec Sheet -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" data-icon="shield">shield</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      STEALTH-W48 Architectural Wall Grazer
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-W48-GRZ-IP66</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">Datasheet &amp; Lab Spec</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">Asymmetric 10°x60° / IP66 / IK08 Exterior</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-tertiary/50 text-tertiary bg-tertiary/10">.PDF</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v3.2 // Dec 2025</td>
+<td class="py-4 px-4 text-text-muted font-mono">4.2 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 9: ORBITA-48 Pendant Ring Revit -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[18px]" data-icon="database">database</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      ORBITA-48 Circular Ring Pendant (Ø1200mm)
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">SKU: ALP-ORB48-120-PND</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">BIM Revit Family</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">Direct / Indirect DALI-2 Tunable White</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-secondary/50 text-secondary bg-secondary/10">.RVT</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v2.0 // Nov 2025</td>
+<td class="py-4 px-4 text-text-muted font-mono">31.0 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+<!-- Row 10: Alpani Master Product Monograph PDF -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-4 text-center">
+<input class="w-4 h-4 bg-obsidian-base border border-border-hairline text-primary focus:ring-0 rounded-none cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-border-hairline bg-obsidian-base flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" data-icon="layers">layers</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-text-alabaster font-medium group-hover:text-primary transition-colors">
+                      Alpani Master Product Monograph 2026
+                    </div>
+<div class="text-[10px] text-text-muted tracking-wider">CODE: DOC-CAT-2026-ENG</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-text-muted">Engineering Master Catalogue</td>
+<td class="py-4 px-4 text-text-alabaster font-mono">CIE Standards / Thermal &amp; Lux Matrices</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 border border-tertiary/50 text-tertiary bg-tertiary/10">.PDF</span>
+</td>
+<td class="py-4 px-4 text-text-muted font-mono">v1.0 // Jan 2026</td>
+<td class="py-4 px-4 text-text-muted font-mono">140 MB</td>
+<td class="py-4 px-4 text-right">
+<button class="px-3 py-1.5 border border-border-hairline text-text-alabaster hover:border-primary hover:text-primary transition-colors inline-flex items-center gap-1.5 uppercase text-[10px]">
+<span class="material-symbols-outlined text-[14px]" data-icon="download">download</span>
+                  Asset
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer: Batch Action Bar & Pagination Controls -->
+<div class="bg-surface-raised border border-border-hairline px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 font-label-mono-sm text-label-mono-sm">
+<!-- Batch Action Selection Badge -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-primary"></span>
+<span class="text-text-alabaster">3 assets selected</span>
+<span class="text-text-muted">(27.2 MB total)</span>
+</div>
+<button class="px-4 py-1.5 bg-primary text-obsidian-base font-semibold uppercase tracking-wider hover:bg-primary-container transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="download">download</span>
+            Download Selected (.ZIP)
+          </button>
+<button class="text-text-muted hover:text-text-alabaster transition-colors uppercase text-[10px]">
+            Deselect All
+          </button>
+</div>
+<!-- Pagination Controls -->
+<div class="flex items-center gap-3 text-text-muted">
+<span>Showing 1-10 of 128 assets</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-text-muted transition-colors disabled:opacity-40" disabled="">
+              &lt;
+            </button>
+<button class="px-2.5 py-1 border border-primary bg-primary/10 text-primary font-mono">1</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-text-muted transition-colors font-mono">2</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-text-muted transition-colors font-mono">3</button>
+<span class="px-1 text-text-muted">...</span>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-text-muted transition-colors font-mono">13</button>
+<button class="px-2.5 py-1 border border-border-hairline text-text-muted hover:text-text-alabaster hover:border-text-muted transition-colors">
+              &gt;
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DIALux & Relux Engineering Plugin Integration Box -->
+<section class="border border-primary/40 bg-surface relative overflow-hidden bloom-glow">
+<!-- Amber ambient accent bar on top -->
+<div class="w-full h-1 bg-gradient-to-r from-primary via-tertiary to-transparent"></div>
+<div class="p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Column: Plugin Specs & CTAs -->
+<div class="lg:col-span-7 space-y-6">
+<div class="flex items-center gap-3 font-label-mono-sm text-label-mono-sm">
+<span class="px-2 py-0.5 bg-primary/10 border border-primary/50 text-primary uppercase">PLUGIN ENGINE V4.2</span>
+<span class="text-text-muted uppercase">OFFICIAL CERTIFIED INTEGRATION</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-alabaster tracking-tight">
+              Alpani DIALux Evo &amp; Relux Integration Plugin
+            </h2>
+<p class="font-body-md text-body-md text-text-muted mt-3 leading-relaxed">
+              Seamlessly import calibrated photometric candela arrays, spectral distributions (TM-30 / CRI), and dynamic 3D luminaire geometries directly into your DIALux Evo 12+ and Relux desktop workspaces. Auto-syncs with the Alpani engineering cloud for zero photometric lag.
+            </p>
+</div>
+<!-- Feature Bullets (Monospace Tech Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-label-mono-sm text-label-mono-sm">
+<div class="flex items-center gap-2 text-text-alabaster">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>Live cloud luminaire database sync</span>
+</div>
+<div class="flex items-center gap-2 text-text-alabaster">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>Certified UGR &amp; glare calculations</span>
+</div>
+<div class="flex items-center gap-2 text-text-alabaster">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>Automated false-color lux calculation</span>
+</div>
+<div class="flex items-center gap-2 text-text-alabaster">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span>Spectral CCT 2700K-6500K tunable simulation</span>
+</div>
+</div>
+<!-- Direct Download Action CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<button class="px-6 py-3 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider flex items-center gap-3 transition-all duration-150">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+<span>Download DIALux Plugin v4.2 (.EXE / .MSI)</span>
+</button>
+<button class="px-6 py-3 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm uppercase tracking-wider flex items-center gap-2 transition-colors duration-150">
+<span class="material-symbols-outlined text-[18px]" data-icon="tune">tune</span>
+<span>Relux Luminaire Package (.RLX)</span>
+</button>
+</div>
+</div>
+<!-- Right Column: System Compatibility Matrix & Engineering Bureau Hotline -->
+<div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-border-hairline lg:pl-8 space-y-6">
+<div class="space-y-4">
+<h3 class="font-label-mono-lg text-label-mono-lg uppercase tracking-wider text-text-alabaster flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="shield">shield</span>
+              COMPATIBILITY ARCHITECTURE
+            </h3>
+<div class="bg-surface-container-low border border-border-hairline p-4 space-y-2 font-label-mono-sm text-label-mono-sm">
+<div class="flex justify-between items-center text-text-muted">
+<span>DIALux Evo</span>
+<span class="text-text-alabaster font-mono">v11.1 &amp; v12.0+ (Win 64-bit)</span>
+</div>
+<div class="flex justify-between items-center text-text-muted">
+<span>ReluxDesktop</span>
+<span class="text-text-alabaster font-mono">2024.2 - 2026 Core</span>
+</div>
+<div class="flex justify-between items-center text-text-muted">
+<span>Autodesk Revit</span>
+<span class="text-text-alabaster font-mono">2023 - 2026 Compatible</span>
+</div>
+<div class="flex justify-between items-center text-text-muted">
+<span>AutoCAD</span>
+<span class="text-text-alabaster font-mono">2024+ DWG 2018 format</span>
+</div>
+</div>
+</div>
+<!-- Bureau Hotline Support Box -->
+<div class="border border-border-hairline p-5 bg-obsidian-base space-y-3">
+<div class="flex items-center gap-2 text-primary font-label-mono-sm text-label-mono-sm">
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+<span>ALPANI PHOTOMETRICS ENGINEERING BUREAU</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Require a complex custom photometric simulation, emergency BoQ calculation, or certified third-party DIALux lux study? Our Zurich photometrics laboratory delivers within 24 hours.
+            </p>
+<button class="w-full py-2.5 border border-primary/60 text-primary hover:bg-primary/10 text-center font-label-mono-sm text-label-mono-sm uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="visibility">visibility</span>
+              Request Photometric Calculation Study
+            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component Execution) -->
+<footer class="w-full bg-obsidian-base dark:bg-obsidian-base border-t border-border-hairline flat no shadows mt-20">
+<div class="w-full px-6 lg:px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Copyright Text -->
+<div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+<span class="font-label-mono-sm text-label-mono-sm uppercase text-text-alabaster dark:text-text-alabaster font-medium tracking-wider">
+          ALPANI INSTRUMENTS
+        </span>
+<span class="hidden md:inline text-border-hairline">|</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-muted">
+          © 2025 ALPANI INSTRUMENTS AG. PRECISION ARCHITECTURAL LIGHTING. ALL RIGHTS RESERVED.
+        </span>
+</div>
+<!-- Links Cluster -->
+<div class="flex flex-wrap justify-center items-center gap-6 font-label-mono-sm text-label-mono-sm text-text-muted dark:text-text-muted">
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Photometric Engine (IES/LDT)</a>
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Dialux Plugin</a>
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Architect Portal</a>
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Terms of Specification</a>
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Compliance &amp; ISO 9001</a>
+<a class="hover:text-alabaster dark:hover:text-text-alabaster hover:text-primary transition-colors duration-150" href="#">Contact Engineering Lab</a>
+</div>
+</div>
+</footer>
+</body></html>
