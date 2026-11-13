@@ -149,10 +149,17 @@
 <div class="flex justify-between items-center w-full px-6 lg:px-16 h-16">
 <!-- Brand & Left Search -->
 <div class="flex items-center gap-8">
-<a class="font-headline-sm text-headline-sm tracking-wider uppercase text-text-alabaster dark:text-text-alabaster font-medium flex items-center gap-3" href="javascript:void(0)">
-<span class="w-2.5 h-2.5 bg-primary inline-block"></span>
-          ALPANI INSTRUMENTS
-        </a>
+<a class="flex items-center gap-3 group" href="index.html">
+  <div class="w-7 h-7 bg-text-alabaster flex items-center justify-center p-1 transition-transform group-hover:scale-95 shrink-0">
+    <div class="w-full h-full border border-obsidian-base grid grid-cols-2">
+      <div class="bg-obsidian-base"></div><div></div><div></div><div class="bg-obsidian-base"></div>
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <span class="font-label-mono-lg text-label-mono-lg uppercase font-semibold tracking-widest text-text-alabaster leading-none">ALPANI</span>
+    <span class="font-label-mono-sm text-label-mono-sm text-primary tracking-widest uppercase text-[10px] mt-0.5 font-medium">INSTRUMENTS</span>
+  </div>
+</a>
 <!-- Search Bar Input on Left -->
 <div class="hidden xl:flex items-center relative w-72">
 <span class="material-symbols-outlined absolute left-3 text-text-muted pointer-events-none">search</span>
@@ -191,7 +198,7 @@
           Quote List: 3
         </div>
 <!-- Primary Action -->
-<button onclick="window.location.href=\'quote-request.html\'" class="bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base transition-colors duration-150 font-label-mono-sm text-label-mono-sm uppercase px-4 py-2 rounded-none tracking-wider font-medium">
+<button onclick="window.location.href='quote-request.html'" class="bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base transition-colors duration-150 font-label-mono-sm text-label-mono-sm uppercase px-4 py-2 rounded-none tracking-wider font-medium">
           Request BoQ
         </button>
 </div>
@@ -202,9 +209,9 @@
 <div class="max-w-[1920px] mx-auto">
 <!-- Breadcrumbs -->
 <div class="flex items-center gap-2 font-label-mono-sm text-label-mono-sm text-text-muted mb-3">
-<a class="hover:text-text-alabaster transition-colors" href="javascript:void(0)">Home</a>
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
 <span class="text-border-hairline">/</span>
-<a class="hover:text-text-alabaster transition-colors" href="javascript:void(0)">Architectural Catalog</a>
+<a class="hover:text-primary transition-colors" href="products.html">Architectural Catalog</a>
 <span class="text-border-hairline">/</span>
 <span class="text-primary">Specifier Matrix</span>
 </div>
@@ -485,8 +492,8 @@
 <!-- CARD 1: LUMENX-M24 Accent Spotlight (USING USER ATTACHED IMAGE) -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img alt="LUMENX-M24 Accent Spotlight fixture with honeycomb snoot" class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCSmYj33CmHUThBiiD1JV7kYrndEGnTk_E_n18aYlD6QHFcijg9awfnR31iHqXWdYixEdJN2-NeuwUoQdsRwzn2uKYi8eufLEHKwINGd_wx8XTaOT7BEYc9b0mk0gGVYbbCZSSnFZeD8d25_rkcHlrpH22MOQj4ckqm_3H9hzEmKXO9slRZWu5A1LFFr_joi9pN61HTGU9VjiwNyuIEzGYPu5iQ_GPgOzKr2itH_lP6"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img alt="LUMENX-M24 Accent Spotlight fixture with honeycomb snoot" class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80';"/>
 <!-- Top Badges -->
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">48V MAGNETIC</span>
@@ -496,6 +503,7 @@
 <span class="px-2 py-0.5 bg-obsidian-base/90 text-text-muted font-label-mono-sm text-[10px] border border-border-hairline">HONEYCOMB LOUVER</span>
 </div>
 </div>
+</a>
 <!-- Product Details Deck -->
 <div class="p-5 flex-1 flex flex-col justify-between">
 <div>
@@ -529,19 +537,19 @@
 </div>
 <!-- Card Actions -->
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
 <!-- CARD 2: MAGNALINE-48 Recessed Linear Lens -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Sleek architectural black anodized recessed linear light fixture integrated flush into a minimalist dark graphite ceiling surface. Narrow dark micro-louvers cast a controlled warm white photometric downward glow. Architectural high-end studio photography with stark geometric lines and moody museum atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvl0FCuwy2wGXYvip2bqSTff4OR0iF2t0tWTtacHf2C0o-myEUNENf6GoDPs90cvdenUiBixehkqKDapVZxL8DOgdg9z3eG75ZYxvuRrL046_EwaaeNfC6nTwjVesxSAki-0zgKEqqn1Hx3gi-q8Wmaogwe8c6fP6vcYoU9d4CbL2dzxbEQetgdAmceT1rwREVRUQuvfSWTTQ60Xrx9SiHkM42S2pvP5JLhMZ6nMEzD_AA9i_mfFxB_fxZxNSf1qyzzgTQnLQh1PA"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Sleek architectural black anodized recessed linear light fixture integrated flush into a minimalist dark graphite ceiling surface. Narrow dark micro-louvers cast a controlled warm white photometric downward glow. Architectural high-end studio photography with stark geometric lines and moody museum atmosphere." src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80"/>
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">48V MAGNETIC</span>
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">UGR &lt; 10</span>
@@ -580,19 +588,19 @@
 </div>
 </div>
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
 <!-- CARD 3: AURA-R75 Architectural Recessed Downlight -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Architectural round trimless recessed downlight ceiling fixture rendered against dark seamless matte background. Deep black stepped internal baffle with precision TIR glass lens radiating a concentrated 3000K warm beam downward. Premium European luxury luminaire design, crisp industrial aesthetic with refined metallic rim." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx_wOZf8zzBZ0-NvBLFJ0QX2FOGKeTCzm99Uh1Q3HiUQBPDGBCiQCmBKLhYVGuNaOFnTaXEIhawS6mCFc-_Fkx03ewHZFAGEXv0rbfxdRxJTkygHpoI8bs4k9aouMk4hSoTr-CcITqDMuOb2M0fm9k6HMMPWdF3lqVdATqEP_FyC8GCzNk33ONMdXylI0PkehyVRARyXJJY0SwRC9t8EzNCHSOQaQWAp32uQ2yd30sLbbh7Dw76UliXxmXcQEYdnT_J6SqGw_cC7U"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Architectural round trimless recessed downlight ceiling fixture rendered against dark seamless matte background. Deep black stepped internal baffle with precision TIR glass lens radiating a concentrated 3000K warm beam downward. Premium European luxury luminaire design, crisp industrial aesthetic with refined metallic rim." src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"/>
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">TRIMLESS REC</span>
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">IP54 WET</span>
@@ -631,19 +639,19 @@
 </div>
 </div>
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
 <!-- CARD 4: CYLINDRA-T50 Zoom Track Projector -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Matte black cylindrical architectural gallery spotlight with continuous mechanical zoom barrel and calibrated rotation ring. Clean German engineering product photography isolated in an optical darkroom void with subtle golden-amber highlights tracing along the anodized edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7SllacikoFVyM8-y5B7xKr91iidsxkkhTNQHmXRo1ZUedFWyBq0LllIYc9EjNRNWb1kx4yet6YHRycgUymm6uZO6myAT8FO-49OYsRNtOSQQkCJnbu6nN74HUVZ18MjjrRlbEkKuSTmUuiM9tIWLp11axA9RyxeNJ7wU5RwuS_B1QsIu3_XOCwReOTjzRXwyjdJLDvck0IsQMLHJmtzPQFiIOd2yT-IvPmj7WUAgDMSbVSiCHRIT66IAIdpEEg5ryQRUfEYDVYCw"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Matte black cylindrical architectural gallery spotlight with continuous mechanical zoom barrel and calibrated rotation ring. Clean German engineering product photography isolated in an optical darkroom void with subtle golden-amber highlights tracing along the anodized edges." src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"/>
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">3-CIRCUIT TRACK</span>
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">12°–48° ZOOM</span>
@@ -682,19 +690,19 @@
 </div>
 </div>
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
 <!-- CARD 5: STEALTH-W48 Architectural Wall Grazing System -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="High precision asymmetric wall-grazer luminaire mounted close to a textured raw concrete wall, projecting dramatic vertical light wash and controlled optical lines upward. Dark industrial architectural environment, high contrast monochrome photography with warm 3000K illumination highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGvVBuQtSzhfNd5unLxPyfXZ0E9lQbPm-hN4vOFjI_WgrgP5TrCGDGHPeOUhDkyzpbj0vYdSI811rA9o0maKgYx0P2f2T2Bie6a29LnJ63_Zag0gYC5Vo-xFeWNB8zR317quxU1Wmhe3cSeGyjOZPa-U1w328azaJWCED--_Qm6qZKvk-nTtgJUCy2hIjKWqSPrSMV88AdjliMqbdB4ZR1t1DkEpWgU8duot7P16hOcW2gwjgfgyefc4iEdb0-mZ9xtSpFnoHo3G0"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="High precision asymmetric wall-grazer luminaire mounted close to a textured raw concrete wall, projecting dramatic vertical light wash and controlled optical lines upward. Dark industrial architectural environment, high contrast monochrome photography with warm 3000K illumination highlights." src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"/>
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">IP65 FAÇADE</span>
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">ASYM GRAZE</span>
@@ -733,19 +741,19 @@
 </div>
 </div>
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
 <!-- CARD 6: ORBITA-48 Pendant Minimalist Ring -->
 <article class="bg-surface-raised border border-border-hairline hover:border-primary transition-colors duration-150 flex flex-col group">
 <!-- Image Stage -->
-<div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
-<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist suspended circular architectural luminaire ring crafted in dark champagne bronze metal floating against an obsidian darkroom studio background. Direct downward precision downlights paired with indirect diffused ceiling ambient aura. Sophisticated high-end luxury fixture rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJOyuKKmiBX__O8xIXypFbsPmTEFuuCpMgFjlybN9ubIT6Y31oj7SSiMpPRTKy--2eSIAYN_727ehatUDwJftWDk3MGPWQ7h0iPIKmropxROWuAx--qdxOiZeB9e3fnyAVYbp6PPr2eMQ4fNxeJJGKJ_3sRtdAFxxpXqCf6DtxOap8vuonrTCAYrqJcqDJ7nGhKQbzfXZP0wRacYcqLA_Dzv0YiRph7thiQWdFS-9LC50PIrBlKeu_nPyQEQX5a2bH3G6iWE8FUN8"/>
+<a href="product-detail.html" class="cursor-pointer block overflow-hidden"><div class="relative bg-surface-container-low border-b border-border-hairline overflow-hidden aspect-[4/3] flex items-center justify-center p-6">
+<img class="object-contain w-full h-full max-h-56 filter contrast-105 group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist suspended circular architectural luminaire ring crafted in dark champagne bronze metal floating against an obsidian darkroom studio background. Direct downward precision downlights paired with indirect diffused ceiling ambient aura. Sophisticated high-end luxury fixture rendering." src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"/>
 <div class="absolute top-3 left-3 flex items-center gap-1.5 font-label-mono-sm text-[10px]">
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-primary border border-primary/40 px-2 py-0.5">DIRECT / INDIRECT</span>
 <span class="bg-obsidian-base/80 backdrop-blur-sm text-text-alabaster border border-border-hairline px-2 py-0.5">Ø 1000mm</span>
@@ -784,11 +792,11 @@
 </div>
 </div>
 <div class="flex items-center gap-2 pt-3 border-t border-border-hairline">
-<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="javascript:void(0)">
+<a class="px-3 py-2 border border-border-hairline text-text-alabaster hover:border-text-muted font-label-mono-sm text-label-mono-sm flex items-center gap-1.5 transition-colors" href="downloads.html">
 <span class="material-symbols-outlined text-sm">description</span>
 <span>.PDF</span>
 </a>
-<button onclick="window.location.href=\'product-detail.html\'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
+<button onclick="window.location.href='product-detail.html'" class="flex-1 bg-obsidian-base border border-primary text-primary hover:bg-primary hover:text-obsidian-base font-label-mono-sm text-label-mono-sm uppercase tracking-wider py-2 px-3 font-medium transition-colors duration-150 flex items-center justify-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-base">tune</span>Configure Spec</button>
 </div>
 </div>
 </article>
@@ -853,10 +861,17 @@
 <div class="w-full px-6 lg:px-16 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
 <!-- Brand & Global Locations -->
 <div class="flex flex-col items-center md:items-start gap-2">
-<div class="font-label-mono-sm text-label-mono-sm uppercase text-text-alabaster dark:text-text-alabaster tracking-widest font-semibold flex items-center gap-2">
-<span class="w-2 h-2 bg-primary inline-block"></span>
-          ALPANI INSTRUMENTS AG
-        </div>
+<div class="flex items-center gap-3">
+  <div class="w-6 h-6 bg-text-alabaster flex items-center justify-center p-0.5 shrink-0">
+    <div class="w-full h-full border border-obsidian-base grid grid-cols-2">
+      <div class="bg-obsidian-base"></div><div></div><div></div><div class="bg-obsidian-base"></div>
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <span class="font-label-mono-md text-label-mono-md uppercase font-semibold tracking-widest text-text-alabaster leading-none">ALPANI INSTRUMENTS</span>
+    <span class="font-label-mono-sm text-label-mono-sm text-text-muted text-[10px] mt-0.5">ARCHITECTURAL LIGHTING SYSTEMS // ISTANBUL · FRANKFURT · ZURICH</span>
+  </div>
+</div>
 <div class="font-label-mono-sm text-label-mono-sm text-text-muted">
           Frankfurt · Zurich · Dubai · Tokyo
         </div>
@@ -904,5 +919,36 @@
       });
     });
   </script>
+
+<script>
+  // Live filter simulation
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('input[placeholder*="Filter by SKU"]');
+    const articles = document.querySelectorAll('main article');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const val = e.target.value.toLowerCase().trim();
+        articles.forEach(art => {
+          const text = art.innerText.toLowerCase();
+          if (!val || text.includes(val)) {
+            art.style.display = 'flex';
+          } else {
+            art.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Filter checkboxes
+    const checkboxes = document.querySelectorAll('aside input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', function() {
+        // Toggle visual feedback
+      });
+    });
+  });
+</script>
+
 </body></html>
 
